@@ -2,8 +2,11 @@
 --------
 New:
 - 加入噪音抑制等級調整功能
+
 ![Img001](README.doc/image/2.5.0/img001.png)
+
 - 加入測試模式開關
+
 ![Img002](README.doc/image/2.5.0/img002.png)
 
 Bugfix:
