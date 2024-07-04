@@ -1,3 +1,24 @@
+[v2.8.0]
+--------
+Fix:
+- 更新ERH3及ERH2的library檔案 (for E7160SL 1.18.1670)
+
+Known Issue:
+- 細節調整尚未實作上傳至元健雲端
+- 在試聽或寫入時，有低機率會寫入失敗
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- Fitting Table的參數對應尚未完成
+	- MPO : 對應Modeler數值(修改不會改變耳機數值)
+	- Level 50: 無對應Onsemi的參數 (修改不會改變耳機數值)
+	- Level 65: 對應LowLevelGain參數
+	- Level 90: 對應HighLevelGain參數
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有goHearing EI1/goHearing EB1的device_id) 
+
 [v2.7.0]
 --------
 New:
