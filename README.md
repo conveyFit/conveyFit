@@ -1,3 +1,53 @@
+[v2.10.0]
+--------
+Fix:
+- 減少Onsemi裝置在連線時的時間
+- 減少Onsemi裝置在試聽/寫入的時間
+- 網路連線錯誤時，會顯示網路錯誤的提示
+
+Known Issue:
+- 細節調整尚未實作上傳至元健雲端
+- 在試聽或寫入時，有低機率會寫入失敗
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- Fitting Table的參數對應尚未完成
+	- MPO : 對應Modeler數值(修改不會改變耳機數值)
+	- Level 50: 無對應Onsemi的參數 (修改不會改變耳機數值)
+	- Level 65: 對應LowLevelGain參數
+	- Level 90: 對應HighLevelGain參數
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有goHearing EI1/goHearing EB1的device_id) 
+
+[v2.9.0]
+--------
+New:
+- 加入調整字型大小功能
+
+Fix:
+- 手機號碼必填改為手機號碼或室內電話擇一填寫
+- 調整客戶資訊欄位的UI顯示
+- 修改字型以及一些字體的效果
+- 修改程式視窗的尺寸限制，以及將上方Tab按鈕變為可依視窗大小縮放
+
+Known Issue:
+- 細節調整尚未實作上傳至元健雲端
+- 在試聽或寫入時，有低機率會寫入失敗
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- Fitting Table的參數對應尚未完成
+	- MPO : 對應Modeler數值(修改不會改變耳機數值)
+	- Level 50: 無對應Onsemi的參數 (修改不會改變耳機數值)
+	- Level 65: 對應LowLevelGain參數
+	- Level 90: 對應HighLevelGain參數
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有goHearing EI1/goHearing EB1的device_id) 
+
 [v2.8.0]
 --------
 Fix:
