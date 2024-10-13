@@ -1,3 +1,29 @@
+[v2.13.0]
+--------
+New:
+- 在Menu上加入「開啟Log資料夾」的功能，讓使用者能更快找到程式Log檔案位置
+![Img001](README.doc/image/2.13.0/img001.png)
+- 修改「響度」在雙耳同步時按表格內的上下鍵時，改為兩耳皆為加1減1，而不再是讓兩耳變相同數值
+
+Fix:
+- 修正「達發裝置沒有開啟同步按鈕，按下靜音按鈕雙耳都會靜音」問題
+
+Known Issue:
+- 細節調整尚未實作上傳至元健雲端
+- 在試聽或寫入時，有低機率會寫入失敗
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- Fitting Table的參數對應尚未完成
+	- MPO : 對應Modeler數值(修改不會改變耳機數值)
+	- Level 50: 無對應Onsemi的參數 (修改不會改變耳機數值)
+	- Level 65: 對應LowLevelGain參數
+	- Level 90: 對應HighLevelGain參數
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有6EM的device_id)
+
 [v2.12.0]
 --------
 New:
