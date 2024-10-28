@@ -1,3 +1,31 @@
+[v2.15.0]
+--------
+New:
+- 現在可以透過三種方式讓畫面進入全螢幕
+    1. 按下「右上方的按鈕」
+	   <br>![Img001](README.doc/image/2.15.0/img001.png)
+	2. 在 Menu Bar 按下「檢視」->「全螢幕」
+       <br>![Img002](README.doc/image/2.15.0/img002.png)
+	3. 按下鍵盤上的「F11」
+- 調整用戶列表的UI樣式
+
+Fix:
+- 當遇到Server的Unauthorized事件時，自動導回登入畫面後無法登入問題
+- 修改回復按鍵功能，按下時只會回復當下Mode的數據
+- 修正Onsemi裝置Level 50為0的問題
+- 增加Server上細節調整參數可能為null的判斷
+
+Known Issue:
+- 在試聽或寫入時，有低機率會寫入失敗
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- 尚未反映Onsemi Fitting Table Level 65 的操作邏輯
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有6EM的device_id)
+
 [v2.14.0]
 --------
 New:
@@ -33,7 +61,7 @@ Known Issue:
 --------
 New:
 - 在Menu上加入「開啟Log資料夾」的功能，讓使用者能更快找到程式Log檔案位置
-![Img001](README.doc/image/2.13.0/img001.png)
+  <br>![Img001](README.doc/image/2.13.0/img001.png)
 - 修改「響度」在雙耳同步時按表格內的上下鍵時，改為兩耳皆為加1減1，而不再是讓兩耳變相同數值
 
 Fix:
@@ -59,12 +87,12 @@ Known Issue:
 --------
 New:
 - 調整細節調整功能的UI設計
-![Img001](README.doc/image/2.12.0/img001.png)
+  <br>![Img001](README.doc/image/2.12.0/img001.png)
 - 使用Onsemi裝置時，細節調整將不會出現風噪音抑制
 - 當客戶資料中，Server上沒有聽力圖時，會跳出提醒視窗
-![Img002](README.doc/image/2.12.0/img002.png)
+  <br>![Img002](README.doc/image/2.12.0/img002.png)
 - 在設定視窗中，加入「如果伺服器沒有數據則上傳聽力圖數據」。此功能開啟後，會在Server上沒有聽力圖時上傳預設的聽力圖 (預設值：500Hz及2KHz設為0)
-![Img003](README.doc/image/2.12.0/img003.png)
+  <br>![Img003](README.doc/image/2.12.0/img003.png)
 
 Fix:
 - 修正「無法設定細節裡面的選項」問題
@@ -205,7 +233,7 @@ New:
 - 用戶搜尋修改為元健雲端實作
 - 取消用戶列表一次完整抓取下來，改為分頁方式顯示，以降低伺服器負載
 - 在用戶列表上加入分頁切換UI
-![Img001](README.doc/image/2.7.0/img001.png)
+<br>![Img001](README.doc/image/2.7.0/img001.png)
 
 Known Issue:
 - 細節調整尚未實作上傳至元健雲端
@@ -249,9 +277,9 @@ Known Issue:
 --------
 New:
 - 加入噪音抑制等級調整功能
-![Img001](README.doc/image/2.5.0/img001.png)
+<br>![Img001](README.doc/image/2.5.0/img001.png)
 - 加入測試模式開關
-![Img002](README.doc/image/2.5.0/img002.png)
+<br>![Img002](README.doc/image/2.5.0/img002.png)
 
 Bugfix:
 - 修正讀取雲端聽力圖value為null造成的crash
@@ -412,12 +440,10 @@ New:
 - 新增匯出適配資料的功能。使用方式：
     1. 選擇用戶
 	2. 點選上方「匯出 (Export)」，選擇要「輸出到檔案」或「輸出到剪貼簿」
-
-  ![Img001](README.doc/image/1.8.0/img001.png)
+       <br>![Img001](README.doc/image/1.8.0/img001.png)
 
 	3. 選擇要匯出哪一筆曾「寫入過」的資料
-
-  ![Img001](README.doc/image/1.8.0/img002.png)
+	   <br>![Img001](README.doc/image/1.8.0/img002.png)
 
 Bugfix:
 - 修正點選調適記錄後沒有執行試聽的問題
@@ -426,34 +452,29 @@ Bugfix:
 --------
 New:
 - 修改聽力圖樣式，並可隨視窗大小縮放
-
-  ![Img001](README.doc/image/1.7.0/image001.png)
+  <br>![Img001](README.doc/image/1.7.0/image001.png)
 
 - 修改調適圖樣式，並可隨視窗大小縮放
 - 修改調適頁面中基本面版的樣式:
     1. 將字體些微縮小以符合整體視覺效果
 	2. 取消按鈕的底色，改為滑鼠移過去時會出現按鈕
 	3. 加大按鈕可點擊區
-
-  ![Img002](README.doc/image/1.7.0/image002.png)
+  <br>![Img002](README.doc/image/1.7.0/image002.png)
 
 - 修改調適頁面中增益面版的樣式:
     1. SliderBar改為與小聲音的數值同步，拉動時同步改變小、中、大聲音
 	2. 修改按鈕樣式，改為左右擺放以節省空間
 	3. 當滑鼠停留在SliderBar上時會顯示詳細數值
-
-  ![Img003](README.doc/image/1.7.0/image003.png)
+  <br>![Img003](README.doc/image/1.7.0/image003.png)
 
 - 現在可以點擊上面Tab回到之前的面頁
 - 加入顯示耳機電量功能，電池圖示會依電量分為五種顏色。滑鼠移到電池圖示上時，會顯示詳細電量
-
-  ![Img004](README.doc/image/1.7.0/image004.png)
-  ![Img006](README.doc/image/1.7.0/image006.png)
+  <br>![Img004](README.doc/image/1.7.0/image004.png)
+  <br>![Img006](README.doc/image/1.7.0/image006.png)
 
 - 修改UI排版，讓程式可支援的最低解析度為1280x720
 - 調適時預設改為每操作一步就執行試聽，並預留設定開關
-
-  ![Img005](README.doc/image/1.7.0/image005.png)
+  <br>![Img005](README.doc/image/1.7.0/image005.png)
 
 - 每次寫入耳機時，會先靜音。待寫入完成後再開啟
 - 新增調適時左右耳同步功能
@@ -469,8 +490,7 @@ KnowIssue:
 --------
 New:
 - 在FittingPage中加入Loading畫面
-
-  ![Img001](README.doc/image/1.6.0/img001.png)
+  <br>![Img001](README.doc/image/1.6.0/img001.png)
 
 [v1.5.0]
 --------
