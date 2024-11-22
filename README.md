@@ -1,3 +1,19 @@
+[v2.17.0]
+--------
+Fix:
+- 修正寫入時，可能造成網路錯誤問題
+
+Known Issue:
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法，斷線後建議重開程式再連線
+- Onsemi耳機斷線後(如:耳機放入充電盒中)，會有機率造成程式Crash的狀況
+- 尚未反映Onsemi Fitting Table Level 65 的操作邏輯
+- 尚未實作增益控制項的Bar移動調整WDRC的功能
+- 無法正確從元健雲端抓取Fitting Table資料
+    - 待元健更新Level/Frequency後應可正確讀取雲端數據
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有6EM的device_id)
+
 [v2.16.0]
 --------
 Fix:
