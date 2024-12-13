@@ -1,3 +1,22 @@
+[v2.20.0]
+--------
+New:
+- 加入自定義助聽器SN的功能 (注意: 此功能並不會改變助聽器內部的SN)
+
+Fix:
+- 修正Onsemi裝置連線後放入充電盒，取出後在裝置頁面重新連線，可能會出現兩個裝置並且點擊連線後程式會沒有反應
+- 修正在裝置頁面切換不同產品但沒有再點擊連線時，進入適配頁面可能造成crash
+- 修正上傳雲端的Serial欄位內容
+
+Known Issue:
+- 無法使用自動連線功能
+- 連線Onsemi裝置後，點擊"儲存並繼續"後，程式會有凍結的狀況(最長可能持續50秒)
+- 尚未實作Onsemi耳機斷線後重連的方法
+- 尚未反映Onsemi Fitting Table Level 65 的操作邏輯
+- 無法正確從元健雲端抓取Fitting Table資料
+    - 待元健更新Level/Frequency後應可正確讀取雲端數據
+- 上傳至元健雲端FittingTable的Device_id暫時為goodHearing R1(尚未有6EM的device_id)
+
 [v2.19.0]
 --------
 New:
