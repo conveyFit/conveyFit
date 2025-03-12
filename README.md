@@ -1,3 +1,12 @@
+[v2.23.0]
+--------
+New:
+- 配對功能實裝
+- 增加Onsemi支援不同Library的方法
+- 增加進行裝置連線時的結果顯示
+- 修改Onsemi裝置可以讀取不同長度的Serial Number
+- 更新ERH2 Library中的tdr資訊
+
 [v2.22.0]
 --------
 New:
